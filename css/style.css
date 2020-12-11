@@ -1,0 +1,131 @@
+    body {
+        background: rgb(186, 253, 255);
+        background: linear-gradient(180deg, rgba(186, 253, 255, 0.5) 0%, rgba(134, 251, 255, 0.5) 15%, rgba(42, 241, 249, 0.5) 30%, rgba(49, 246, 255, 0.5) 45%, rgba(77, 155, 158, 0.5) 51%, rgba(194, 20, 20, 0.5) 69%, rgba(255, 0, 6, 0.5) 100%);
+        margin: 0;
+        padding: 0;
+    }
+    /****** NAVBAR **********/
+    
+    .navbarP {
+        margin: 0;
+        padding: 0;
+    }
+    /****************** CARDS PRINCIPALES ***************/
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .containerCard {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 75px;
+    }
+    
+    .containerCard .cardB {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        margin: 80px 20px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, .5);
+        transition: 0.3s ease-in-out;
+    }
+    
+    .containerCard .cardB:hover {
+        height: 420px;
+    }
+    
+    .containerCard .cardB .imgBox {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        top: -60px;
+        left: 135px;
+        z-index: 1;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
+        text-align: center;
+    }
+    
+    .containerCard .cardB .imgBox h2 {
+        margin-top: 10px;
+    }
+    
+    .containerCard .cardB .imgBox img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    }
+    
+    .containerCard .cardB .cardContent {
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        backface-visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .containerCard .cardB:hover .cardContent {
+        height: 90vh;
+        width: 90vw;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 40px;
+        transition-delay: 0.3s;
+    }
+    
+    .containerCard .cardB:hover {
+        height: 60vh;
+        width: 60vw;
+    }
+    /************** FIN CARDS PRINCIPALES *************/
+    /************** FOOTER ******************/
+    
+    li {
+        list-style-type: none;
+        margin-left: 1vw;
+    }
+    
+    li:first-child {
+        margin: 0;
+    }
+    
+    footer {
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+    }
+    
+    .content {
+        height: 10vh;
+    }
+    
+    .copyright,
+    .impressum {
+        text-align: center;
+    }
+    
+    .logo {
+        height: 8vh;
+    }
+    
+    @media (max-width: 768px) {
+        li {
+            margin-left: 0;
+            margin-bottom: 1vh;
+        }
+        .sozial {
+            margin-bottom: 1vh;
+        }
+    }
+    /************** FIN FOOTER ******************/
