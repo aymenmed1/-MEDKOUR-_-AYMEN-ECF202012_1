@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -12,47 +13,47 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbarP">
-        <!-- logo -->
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.png" width="250" height="250" class="d-inline-block align-top" alt="" loading="lazy">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
         <!-- liste navbar -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav listeNav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    <a class="nav-link" href="#">Accueil <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Les Albums</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact<span class="sr-only"></span></a>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </div>
     </nav>
     <!-- fin navbar -->
     <!-- header -->
     <header>
-
+        <div></div>
+        <h1>Nos artistes favoris de ce mois</h1>
     </header>
     <!-- fin header -->
     <main>
+
         <div class="containerCard">
             <!-- JUL -->
             <div class="cardB">
                 <div class="imgBox">
                     <img src="img/julPortrait.jpg" alt="">
                     <h2>JUL</h2>
+                    <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <p class="presentation">Jul, de son vrai nom Julien Mari, est un rappeur et chanteur français, né le 14 janvier 1990 dans le 12e arrondissement de Marseille. Il publie son premier single, Sort le cross volé, en novembre 2013 suivi en février 2014 d'un album
+                        entier, Dans ma paranoïa...
+                    </p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
                 </div>
             </div>
             <!-- PNL -->
@@ -60,9 +61,11 @@
                 <div class="imgBox">
                     <img src="img/pnlPortrait.jpg" alt="">
                     <h2>PNL</h2>
+                    <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
                 </div>
             </div>
             <!-- SCH -->
@@ -70,9 +73,11 @@
                 <div class="imgBox">
                     <img src="img/schPortrait.jpg" alt="">
                     <h2>SCH</h2>
+                    <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
                 </div>
             </div>
             <!-- NINHO -->
@@ -80,9 +85,11 @@
                 <div class="imgBox">
                     <img src="img/ninhoPortrait.jpg" alt="">
                     <h2>NINHO</h2>
+                    <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
                 </div>
             </div>
             <!-- AYA -->
@@ -90,19 +97,24 @@
                 <div class="imgBox">
                     <img src="img/ayaPortrait.jpg" alt="">
                     <h2>AYA NAKAMURA</h2>
+                    <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
                 </div>
             </div>
-            <!-- PLK -->
+            <!-- WEJDENE -->
             <div class="cardB">
                 <div class="imgBox">
                     <img src="img/wejdenePortrait.jpeg" alt="">
                     <h2>WEJDENE</h2>
+                    <p class="pTrans">En savoir plus...</p>
+
                 </div>
                 <div class="cardContent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
                 </div>
             </div>
         </div>
@@ -148,10 +160,12 @@
                     <p> Tel: 07XXXXXXXX </p>
                     <p> 13 BD des fleurs, 13016 Marseille </p>
                 </div>
-                <!-- Ende Impressum -->
+                <!-- FIN CONTACT -->
             </footer>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="ressources/main.js"></script>
 </body>
 
 </html>
