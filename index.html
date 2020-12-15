@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -13,35 +13,47 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbarP">
-        <!-- liste navbar -->
-        <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav listeNav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil <span class="sr-only"></span></a>
+        <div class="container-fluid">
+            <a class="navbar-brand myMusic" href="#"> MY MUSIC &copy;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Artistes</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Action 2</a></li>
+                </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Les Albums</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact<span class="sr-only"></span></a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
     <!-- fin navbar -->
     <!-- header -->
     <header>
-        <div></div>
+        <img src="img/logo.png" alt="">
         <h1>Nos artistes favoris de ce mois</h1>
     </header>
     <!-- fin header -->
     <main>
-
-        <div class="containerCard">
+        <!---------------------------------------------- model Desktop au dessus de 1300px ----------------------------------------------------------->
+        <div class="containerCard coverTrans">
             <!-- JUL -->
             <div class="cardB">
                 <div class="imgBox">
@@ -50,10 +62,9 @@
                     <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p class="presentation">Jul, de son vrai nom Julien Mari, est un rappeur et chanteur français, né le 14 janvier 1990 dans le 12e arrondissement de Marseille. Il publie son premier single, Sort le cross volé, en novembre 2013 suivi en février 2014 d'un album
-                        entier, Dans ma paranoïa...
+                    <p class="presentation">Jul, de son vrai nom Julien Mari, est un rappeur et chanteur français, né le 14 janvier 1990 dans le 12e arrondissement de Marseille. Il publie son premier single, Sort le cross volé, en novembre 2013...
                     </p>
-                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
                 </div>
             </div>
             <!-- PNL -->
@@ -64,8 +75,8 @@
                     <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
-                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
+                    <p class="presentation">PNL est un groupe de rap français, composé de deux frères, Ademo et N.O.S (de leurs vrais noms Tarik et Nabil Andrieu), originaires de la cité des Tarterêts à Corbeil-Essonnes...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
                 </div>
             </div>
             <!-- SCH -->
@@ -76,20 +87,20 @@
                     <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
-                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
+                    <p class="presentation">SCH, de son vrai nom Julien Schwarzer, est un rappeur français né le 6 avril 1993 dans le 12e arrondissement de Marseille, dans les Bouches-du-Rhône. Son identité musicale se caractérise par une voix grave...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
                 </div>
             </div>
-            <!-- NINHO -->
+            <!-- ANGELE -->
             <div class="cardB">
                 <div class="imgBox">
-                    <img src="img/ninhoPortrait.jpg" alt="">
-                    <h2>NINHO</h2>
+                    <img src="img/angelePortrait.jpg" alt="">
+                    <h2>ANGELE</h2>
                     <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
-                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
+                    <p class="presentation">Angèle Van Laeken, simplement dite Angèle, est une autrice-compositrice-interprète, instrumentiste et productrice belge, née le 3 décembre 1995 à Uccle. Son premier album, Brol, sorti en octobre 2018 et certifié disque de diamant...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
                 </div>
             </div>
             <!-- AYA -->
@@ -100,8 +111,8 @@
                     <p class="pTrans">En savoir plus...</p>
                 </div>
                 <div class="cardContent">
-                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
-                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
+                    <p class="presentation">Aya Nakamura (de son vrai nom Aya Danioko), née le 10 mai 1995 à Bamako au Mali, est une autrice-compositrice-interprète française. Sa percée se fait dès la sortie de son premier album intitulé Journal intime...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
                 </div>
             </div>
             <!-- WEJDENE -->
@@ -113,57 +124,124 @@
 
                 </div>
                 <div class="cardContent">
-                    <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas odio, necessitatibus, ratione sapiente sunt aperiam maxime aliquid doloremque accusamus commodi nulla nobis? Eveniet voluptas amet neque tenetur eos! Ullam!</p>
-                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></p></span>
+                    <p class="presentation">Wejdene, née à Saint-Denis, en Seine-Saint-Denis, est une chanteuse de RnB française. Elle accède à la notoriété en 2020, avec son titre Anissa, massivement partagé sur le réseau social TikTok et certifié single de platine.</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------- Modéles Inferieurs a 1300px -------------------------------------------->
+        <div class="containerCardRes coverTrans">
+            <!-- JUL -->
+            <div class="cardBRes">
+                <div class="imgBoxRes">
+                    <img src="img/julPortrait.jpg" alt="">
+                    <h2>JUL</h2>
+                </div>
+                <div class="cardContentRes">
+                    <p>Jul, de son vrai nom Julien Mari, est un rappeur et chanteur français, né le 14 janvier 1990 dans le 12e arrondissement de Marseille. Il publie son premier single, Sort le cross volé, en novembre 2013...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
+                </div>
+            </div>
+            <!-- PNL -->
+            <div class="cardBRes">
+                <div class="imgBoxRes">
+                    <img src="img/pnlPortrait.jpg" alt="">
+                    <h2>PNL</h2>
+                </div>
+                <div class="cardContentRes">
+                    <p>PNL est un groupe de rap français, composé de deux frères, Ademo et N.O.S (de leurs vrais noms Tarik et Nabil Andrieu), originaires de la cité des Tarterêts à Corbeil-Essonnes...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
+                </div>
+            </div>
+            <!-- SCH -->
+            <div class="cardBRes">
+                <div class="imgBoxRes">
+                    <img src="img/schPortrait.jpg" alt="">
+                    <h2>SCH</h2>
+                </div>
+                <div class="cardContentRes">
+                    <p>SCH, de son vrai nom Julien Schwarzer, est un rappeur français né le 6 avril 1993 dans le 12e arrondissement de Marseille...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
+                </div>
+            </div>
+            <!-- ANGELE -->
+            <div class="cardBRes">
+                <div class="imgBoxRes">
+                    <img src="img/angelePortrait.jpg" alt="">
+                    <h2>ANGELE</h2>
+                </div>
+                <div class="cardContentRes">
+                    <p>Angèle Van Laeken, simplement dite Angèle, est une autrice-compositrice-interprète, instrumentiste et productrice belge...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
+                </div>
+            </div>
+            <!-- AYA -->
+            <div class="cardBRes">
+                <div class="imgBoxRes">
+                    <img src="img/ayaPortrait.jpg" alt="">
+                    <h2>AYA N.</h2>
+                </div>
+                <div class="cardContentRes">
+                    <p>Aya Nakamura (de son vrai nom Aya Danioko), née le 10 mai 1995 à Bamako au Mali, est une autrice-compositrice-interprète française...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
+                </div>
+            </div>
+            <!-- WEJDENE -->
+            <div class="cardBRes">
+                <div class="imgBoxRes">
+                    <img src="img/wejdenePortrait.jpeg" alt="">
+                    <h2>WEJDENE</h2>
+                </div>
+                <div class="cardContentRes">
+                    <p>Wejdene, née à Saint-Denis, en Seine-Saint-Denis, est une chanteuse de RnB française. Elle accède à la notoriété en 2020, avec son titre Anissa...</p>
+                    <span class="btn"><a href="">Voir la fiche de l'artiste</a></span>
                 </div>
             </div>
         </div>
     </main>
-    <!---------- footer ------------>
-    <footer>
-        <div class="container">
-            <div class="content"></div>
-            <footer class="row">
-                <div class="sozial col-xs-12 col-sm-6 col-sm-push-6">
-                    <ul class="row">
-                        <li class="col-xs-6 col-sm-2">
-                            <a href="#">
-                                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
-                            </a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2">
-                            <a href="#">
-                                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
-                            </a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2">
-                            <a href="#">
-                                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
-                            </a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2">
-                            <a href="#">
-                                <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_google_plus-128.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- FIN RESEAUX SOCIAUX -->
+    <!----------------------- footer ---------------------->
+    <div class="containerFooter">
+        <div class="contentFooter"></div>
+        <footer class="row">
+            <div class="sozial col-xs-12 col-sm-6 col-sm-push-6">
+                <ul class="row">
+                    <li class="col-xs-6 col-sm-2 liFooter">
+                        <a href="#">
+                            <img class="logoFooter" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png" alt="">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-2 liFooter">
+                        <a href="#">
+                            <img class="logoFooter" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png" alt="">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-2 liFooter">
+                        <a href="#">
+                            <img class="logoFooter" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png" alt="">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-2 liFooter">
+                        <a href="#">
+                            <img class="logoFooter" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_google_plus-128.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- FIN RESEAUX SOCIAUX -->
 
-                <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
-                    <p> &copy; MY MUSIC </p>
-                </div>
-                <!-- FIN Copyright -->
+            <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
+                <p> &copy; MY MUSIC </p>
+            </div>
+            <!-- FIN Copyright -->
 
-                <div class="impressum col-xs-12 col-sm-3 col-sm-pull-6">
-                    <h3>contact</h3>
-                    <p> Tel: 07XXXXXXXX </p>
-                    <p> 13 BD des fleurs, 13016 Marseille </p>
-                </div>
-                <!-- FIN CONTACT -->
-            </footer>
-        </div>
-    </footer>
+            <div class="impressum col-xs-12 col-sm-3 col-sm-pull-6">
+                <h3>contact</h3>
+                <p> Tel: 07XXXXXXXX </p>
+                <p> 13 BD des fleurs, 13016 Marseille </p>
+            </div>
+            <!-- FIN CONTACT -->
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="ressources/main.js"></script>
 </body>
