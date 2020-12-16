@@ -1,353 +1,490 @@
-body {
-    background: rgb(186, 253, 255);
-    background: linear-gradient(180deg, rgba(186, 253, 255, 0.5) 0%, rgba(134, 251, 255, 0.5) 15%, rgba(42, 241, 249, 0.5) 30%, rgba(49, 246, 255, 0.5) 45%, rgba(77, 155, 158, 0.5) 51%, rgba(194, 20, 20, 0.5) 69%, rgba(255, 0, 6, 0.5) 100%);
-    margin: 0;
-    padding: 0;
-}
-
-.coverTrans {
-    width: 100vw;
-    display: block;
-    position: relative;
-}
-
-.coverTrans::after {
-    content: "";
-    background: url("../img/coverMix.jpg");
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-
-
-/****** NAVBAR **********/
-
-.navbarP {
-    margin: 0;
-    padding: 0;
-    border-bottom: 10px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(to left, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
-}
-
-.navbarP a {
-    margin: 0;
-    padding: 0;
-    font-size: 45px;
-}
-
-.navbarP div .listeNav {
-    width: 90vw;
-    display: flex;
-    justify-content: space-evenly
-}
-
-.navbarP div .myMusic {
-    padding-top: 15px;
-    font-size: 72px;
-    background: linear-gradient(rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/**************** fin navbar *******************/
-
-
-/******************* HEADER ***************************/
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-header h1 {
-    padding-top: 15px;
-    font-size: 72px;
-    text-align: center;
-    background: -webkit-linear-gradient(rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-header div {
-    margin-top: 15px;
-    width: 20vw;
-    height: 40vh;
-}
-
-
-/****************** CARDS PRINCIPALES ***************/
-
-.containerCardRes {
-    display: none;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.containerCard {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    padding: 75px;
-}
-
-.containerCard .cardB {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    margin: 80px 20px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 5px 50px rgba(0, 0, 0, .5);
-    transition: 0.3s ease-in-out;
-    display: grid;
-    grid-template-columns: 500px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.containerCard .cardB:hover {
-    height: 60vh;
-    width: 50vw;
-}
-
-.containerCard .cardB .imgBox {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    top: -60px;
-    left: 135px;
-    z-index: 1;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
-    text-align: center;
-}
-
-.containerCard .cardB .imgBox h2 {
-    margin-top: 10px;
-}
-
-.containerCard .cardB .imgBox img {
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-}
-
-.containerCard .cardB .cardContent {
-    position: relative;
-    text-align: center;
-    backface-visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.containerCard .cardB:hover .cardContent {
-    width: 100%;
-    height: 100%;
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0.3s;
-}
-
-.containerCard .cardB .cardContent .presentation {
-    text-align: left;
-    font-weight: 500;
-}
-
-
-/********************* bouton transition *************/
-
-.containerCard .cardB .pTrans {
-    display: block;
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(to left, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
-    border-radius: 30px;
-    color: black;
-}
-
-.containerCard .cardB:hover .pTrans {
-    opacity: 0;
-    transition: 0.7s ease-in-out;
-}
-
-.containerCard .cardB .cardContent .btn {
-    margin: 0;
-    padding-bottom: 0;
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient( to bottom, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5)) 1 100%;
-}
-
-.containerCard .cardB .cardContent .btn a {
-    text-decoration: none;
-    color: black;
-    font-size: large;
-    font-weight: 900;
-}
-
-
-/************** FIN CARDS PRINCIPALES *************/
-
-
-/***************** CARDS SECONDAIRE  *************/
-
-.presentation {
-    max-width: 10vw;
-    grid-row: 1/3;
-    grid-column: 3/4;
-}
-
-
-/************** FIN CARD SECONDAIRE **************/
-
-
-/************** FOOTER ******************/
-
-.liFooter {
-    list-style-type: none;
-    margin-left: 1vw;
-}
-
-.liFooter:first-child {
-    margin: 0;
-}
-
-.footerP {
-    padding-top: 5vh;
-    padding-bottom: 2vh;
-}
-
-.contentFooter {
-    height: 10vh;
-}
-
-.copyright,
-.impressum {
-    text-align: center;
-}
-
-.logoFooter {
-    height: 8vh;
-}
-
-@media (max-width: 768px) {
-    .liFooter {
-        margin-left: 0;
-        margin-bottom: 1vh;
+    body {
+        background: rgb(186, 253, 255);
+        background: linear-gradient(180deg, rgba(186, 253, 255, 0.5) 0%, rgba(134, 251, 255, 0.5) 15%, rgba(42, 241, 249, 0.5) 30%, rgba(49, 246, 255, 0.5) 45%, rgba(77, 155, 158, 0.5) 51%, rgba(194, 20, 20, 0.5) 69%, rgba(255, 0, 6, 0.5) 100%);
+        margin: 0;
+        padding: 0;
     }
-    .sozial {
-        margin-bottom: 1vh;
-    }
-}
-
-
-/************** FIN FOOTER ******************/
-
-
-/******** MEDIA QUERIES 1300px ************/
-
-@media screen and ( max-width: 1300px) {
-    /************ CARDS PRICIPALS ************/
-    .containerCard {
-        display: none;
-    }
-    .containerCardRes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .containerCardRes {
+    
+    .coverTrans {
+        width: 100vw;
         display: block;
         position: relative;
-        width: 1100px;
+    }
+    
+    .coverTrans::after {
+        content: "";
+        background: url("../img/coverMix.jpg");
+        opacity: 0.05;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    /****** NAVBAR **********/
+    
+    .navbarP {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        border-bottom: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to left, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
+    }
+    
+    .navbarP a {
+        margin: 0;
+        padding: 0;
+        font-size: 35px;
+        text-decoration: underline;
+        letter-spacing: 3px;
+    }
+    
+    .navbarP div .myMusic {
+        padding-top: 15px;
+        font-size: 50px;
+        margin-right: 50px;
+        background: linear-gradient(rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    /**************** fin navbar *******************/
+    /******************* HEADER ***************************/
+    
+    header {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        padding: 30px;
+        flex-direction: column;
     }
-    .containerCardRes .cardBRes {
+    
+    header h1 {
+        padding-top: 15px;
+        font-size: 72px;
+        text-align: center;
+        background: -webkit-linear-gradient(rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    header div {
+        margin-top: 15px;
+        width: 20vw;
+        height: 40vh;
+    }
+    /****************** CARDS PRINCIPALES ***************/
+    
+    .containerCardRes {
+        display: none;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .containerCard {
         position: relative;
-        max-width: 300px;
-        height: 215px;
-        margin: 30px 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 75px;
+    }
+    
+    .containerCard .cardB {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        margin: 80px 20px;
+        padding: 20px 15px;
         display: flex;
         flex-direction: column;
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+        box-shadow: 0px 5px 50px rgba(0, 0, 0, .5);
         transition: 0.3s ease-in-out;
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .containerCardRes .cardBRes:hover {
-        height: 420px;
+    
+    .containerCard .cardB:hover {
+        height: 60vh;
+        width: 50vw;
     }
-    .containerCardRes .cardBRes .imgBoxRes {
+    
+    .containerCard .cardB .imgBox {
         position: relative;
-        margin-top: 30px;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         top: -60px;
-        left: 50px;
+        left: 135px;
         z-index: 1;
         box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
         text-align: center;
     }
-    .containerCardRes .cardBRes .imgBoxRes img {
-        width: 200px;
-        height: 200px;
+    
+    .containerCard .cardB .imgBox h2 {
+        margin-top: 10px;
+    }
+    
+    .containerCard .cardB .imgBox img {
+        width: 300px;
+        height: 300px;
         border-radius: 5px;
     }
-    .containerCardRes .cardBRes .cardContentRes {
+    
+    .containerCard .cardB .cardContent {
         position: relative;
         text-align: center;
         backface-visibility: hidden;
         opacity: 0;
         transition: 0.3s ease-in-out;
     }
-    .containerCardRes .cardBRes:hover .cardContentRes {
+    
+    .containerCard .cardB:hover .cardContent {
+        width: 100%;
+        height: 100%;
         visibility: visible;
         opacity: 1;
         transition-delay: 0.3s;
     }
-    /********** BOUTON ****************/
-    .containerCardRes .cardBRes .cardContentRes .btn {
+    
+    .containerCard .cardB .cardContent .presentation {
+        text-align: left;
+        font-weight: 500;
+    }
+    /********************* bouton transition *************/
+    
+    .containerCard .cardB .pTrans {
+        display: block;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: linear-gradient(to left, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
+        border-radius: 30px;
+        color: black;
+    }
+    
+    .containerCard .cardB:hover .pTrans {
+        opacity: 0;
+        transition: 0.7s ease-in-out;
+    }
+    
+    .containerCard .cardB .cardContent .btn {
         margin: 0;
         padding-bottom: 0;
         border-width: 3px;
         border-style: solid;
         border-image: linear-gradient( to bottom, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5)) 1 100%;
     }
-    .containerCardRes .cardBRes .cardContentRes .btn a {
+    
+    .containerCard .cardB .cardContent .btn a {
         text-decoration: none;
         color: black;
+        font-size: large;
         font-weight: 900;
     }
-}
-
-
-/************* MEDIA QUERIES 950px *******************/
-
-@media screen and ( max-width: 950px) {
-    header h1 {
-        padding-top: 15px;
-        font-size: 50px;
-        background: -webkit-linear-gradient(rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    /************** FIN CARDS PRINCIPALES *************/
+    /***************** CARDS SECONDAIRE  *************/
+    
+    .presentation {
+        max-width: 10vw;
+        grid-row: 1/3;
+        grid-column: 3/4;
     }
-}
+    /************** FIN CARD SECONDAIRE **************/
+    /************** FOOTER ******************/
+    
+    .liFooter {
+        list-style-type: none;
+        margin-left: 1vw;
+    }
+    
+    .liFooter:first-child {
+        margin: 0;
+    }
+    
+    .footerP {
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+    }
+    
+    .contentFooter {
+        height: 10vh;
+    }
+    
+    .copyright,
+    .impressum {
+        text-align: center;
+    }
+    
+    .logoFooter {
+        height: 8vh;
+    }
+    
+    @media (max-width: 768px) {
+        .liFooter {
+            margin-left: 0;
+            margin-bottom: 1vh;
+        }
+        .sozial {
+            margin-bottom: 1vh;
+        }
+    }
+    /************** FIN FOOTER ******************/
+    /******** MEDIA QUERIES 1300px ************/
+    
+    @media screen and ( max-width: 1300px) {
+        /************ CARDS PRICIPALS ************/
+        .containerCard {
+            display: none;
+        }
+        .containerCardRes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerCardRes {
+            display: block;
+            position: relative;
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .containerCardRes .cardBRes {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            margin: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+            transition: 0.3s ease-in-out;
+        }
+        .containerCardRes .cardBRes:hover {
+            height: 420px;
+        }
+        .containerCardRes .cardBRes .imgBoxRes {
+            position: relative;
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            top: -60px;
+            left: 50px;
+            z-index: 1;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
+            text-align: center;
+        }
+        .containerCardRes .cardBRes .imgBoxRes img {
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+        }
+        .containerCardRes .cardBRes .cardContentRes {
+            position: relative;
+            text-align: center;
+            backface-visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .containerCardRes .cardBRes:hover .cardContentRes {
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0.3s;
+        }
+        /********** BOUTON ****************/
+        .containerCardRes .cardBRes .cardContentRes .btn {
+            margin: 0;
+            padding-bottom: 0;
+            border-width: 3px;
+            border-style: solid;
+            border-image: linear-gradient( to bottom, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5)) 1 100%;
+        }
+        .containerCardRes .cardBRes .cardContentRes .btn a {
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+        }
+    }
+    /************* MEDIA QUERIES 950px *******************/
+    
+    @media screen and ( max-width: 950px) {
+        header h1 {
+            padding-top: 15px;
+            font-size: 50px;
+            background: -webkit-linear-gradient(rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    /************************************************************** CSS PAGE ARTISTES ***************************************************************/
+    
+    .mainArtistes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    main section article {
+        height: 95vh;
+        width: 65vw;
+        margin: 15px 20px;
+        border: 5px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    /************** PHOTO H2 ET ICÔNES ************/
+    
+    .photoTitre {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .photoTitre img {
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+    }
+    
+    .photoTitre .logoMusique ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .photoTitre .logoMusique ul li {
+        width: 70px;
+        margin: 5px;
+        padding: 2px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    
+    .photoTitre .logoMusique ul li:hover {
+        border: 3px solid black;
+        border-radius: 50px;
+    }
+    
+    .photoTitre .logoMusique ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .photoTitre .logoMusique ul li:hover a {
+        color: black;
+    }
+    /************** FIN  PHOTO H2 ET ICÔNES ************/
+    /****************** PRESENTATION ******************/
+    
+    .presentationArtiste {
+        grid-row: 1/2;
+        grid-column: 2/4;
+        margin: 20px 30px;
+    }
+    
+    .presentationArtiste p {
+        font-weight: 500;
+    }
+    /****************** FIN PRESENTATION ******************/
+    /****************** CLIP YOUTUBE ******************/
+    
+    .dernierClip {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        display: flex;
+        justify-content: center;
+        margin: 15px 20px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+    }
+    
+    .dernierClip iframe {
+        height: 300px;
+        width: 400px;
+        border-radius: 10px;
+    }
+    /****************** FIN  CLIP YOUTUBE ******************/
+    /**************************** DATE CONCERT **************/
+    
+    .dateConcert {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        width: 10vw;
+        height: 20vh;
+        border: 3px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, rgba(42, 241, 249, 0.5), rgba(255, 0, 6, 0.5));
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dateConcert p {
+        text-align: center;
+        font-weight: 700;
+        color: red;
+    }
+    /**************************** DATE CONCERT **************/
+    /*************** CAROUSEL*******************************/
+    
+    .containerAlbums {
+        grid-row: 3/4;
+        grid-column: 1/4;
+        width: 40vw;
+        height: 20vh;
+        margin-top: 20px;
+        overflow-x: auto;
+        white-space: wrap;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .containerAlbums ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .containerAlbums ul li {
+        list-style: none;
+        margin: 10px 15px;
+    }
+    
+    .containerAlbums ul li img {
+        width: 7vw;
+        height: 14vh;
+        border-radius: 5px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+    }
+    
+    .containerAlbums ul li img:hover {
+        width: 9vw;
+        height: 18vh;
+        border-radius: 5px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+        transition: 0.3s ease-in-out;
+    }

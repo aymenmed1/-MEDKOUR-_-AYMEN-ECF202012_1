@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d7e28e9de3.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body class="coverTrans">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbarP">
         <div class="container-fluid">
@@ -21,21 +21,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Album</a>
+                        <a class="nav-link" href="#">Mes albums</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Artiste</a>
+                        <a class="nav-link" href="#">Mes artistes</a>
                     </li>
-                </ul>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Contact</a></li>
-                    <li><a class="dropdown-item" href="#">Action 1</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Action 2</a></li>
-                </ul>
-                </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,15 +38,89 @@
     <!-- header -->
     <header>
         <img src="img/logo.png" alt="">
-        <h1>JUL</h1>
+        <h1>MES ARTISTES</h1>
     </header>
     <!-- fin header -->
-    <main>
-        <article>
-            <img src="img/julPortrait.jpg" alt="">
-        </article>
+    <!------------- MAIN-------------->
+    <main class="mainArtistes ">
+        <section>
+            <!-- JUL -->
+            <article>
+                <div class="photoTitre">
+                    <img src="img/julPortrait.jpg" alt="">
+                    <h2>JUL</h2>
+                    <div class="logoMusique">
+                        <ul>
+                            <li><a href=""><i class="fab fa-2x fa-deezer"></i></a></li>
+                            <li><a href=""><i class="fab fa-2x fa-napster"></i></a></li>
+                            <li><a href=""><i class="fab fa-2x fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-2x fa-spotify"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="presentationArtiste">
+                    <p>Seulement deux jours après l'annonce de son 21ème album, JuL dévoile la grosse tracklist de "Loin du Monde". La nouvelle est tombée le 11 décembre dernier. JuL fait de nouveau parler de lui avec l'annonce d'un nouvel album dont la
+                        sortie est prévue pour le 18 décembre prochain. De quoi se faire plaisir pendant les fêtes de fin d'année. Histoire de nous mettre l'eau à la bouche, le rappeur marseillais à publié la tracklist de son projet sur ses réseaux il
+                        y a quelques heures, et il n'a pas fait les choses à moitié. Au programme : 18 titres et 11 invités. Parmi eux, on retrouve notamment Wejdene (une connexion très attendue), Naps, Le Rat Luciano, Alonzo et l'Algerino, ou encore
+                        SCH sur Mother f**k paru le 10 décembre dernier. Toujours aussi fédérateur, le J regroupe un beau panel d'artistes multi générationnels. Une fois de plus, JuL a donc sorti le grand jeu pour son 21ème album... Allez, plus que 4
+                        jours à patienter !... Pour son dernier clip JuL s’associe à SCH pour un featuring exclusif intitulé "M*THER F**K". Découvrez le clip de ce nouveau single. dès à présent sur youtube. </p>
+                </div>
+                <div class="dernierClip">
+                    <iframe src="https://www.youtube.com/embed/VBnfidhf5Q8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="dateConcert">
+                    <p>¡Aucune date de concert n'est prévue, en cause : la situation sanitaire actuelle!</p>
+                </div>
+                <div class="containerAlbums">
+                    <ul>
+                        <li> <img src="img/cover/coverEmotion.jpg" alt=""></li>
+                        <li> <img src="img/cover/coverJTPS.jpg" alt=""></li>
+                        <li> <img src="img/cover/coverMyWorld.jpg" alt=""></li>
+                        <li> <img src="img/cover/coverR100R.jpeg" alt=""></li>
+                        <li> <img src="img/cover/coverJUL13organise.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </article>
+            <!-- WEJDENE -->
+            <article>
+                <div class="photoTitre">
+                    <img src="img/wejdenePortrait.jpeg" alt="">
+                    <h2>WEJDENE</h2>
+                    <div class="logoMusique">
+                        <ul>
+                            <li><a href=""><i class="fab fa-2x fa-deezer"></i></a></li>
+                            <li><a href=""><i class="fab fa-2x fa-napster"></i></a></li>
+                            <li><a href=""><i class="fab fa-2x fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-2x fa-spotify"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="presentationArtiste">
+                    <p>C’est très certainement la révélation de l’année ! Wejdene est le phénomène qui a bousculé le milieu musical en 2020 en débarquant avec le morceau Anissa, devenu disque de platine. Après avoir sorti un autre titre, Coco, toujours dans
+                        la même dynamique que son premier tube, la jeune adolescente a dévoilé son premier album, 16, qui s’est vendu comme des petits pains.Wejdene a dévoilé son dernier clip extrait de son premier album 16 sur Youtube, qui a été vu plus
+                        de 1,3 million de fois en 24 heures (il a atteint les 100 000 vues en 10 minutes seulement, ndlr). Une bonne nouvelle pour les fans après avoir appris que la jeune star ait confirmé sa nomination aux NRJ Music Awards 2020 dans
+                        deux catégories, celle de "révélation de l'année" et celle de "artiste féminine de l'année". </p>
+                </div>
+                <div class="dernierClip">
+                    <iframe src="https://www.youtube.com/embed/tBWtJOaEpzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="dateConcert">
+                    <p>¡Aucune date de concert n'est prévue, en cause : la situation sanitaire actuelle!</p>
+                </div>
+                <div class="containerAlbums">
+                    <ul>
+                        <li> <img src="img/cover/coverWejdene.jpg" alt=""></li>
+                        <li> <img src="img/cover/coverAnissa.jpg" alt=""></li>
+                        <li> <img src="img/cover/coverCoco.jpg" alt=""></li>
+                        <li> <img src="img/cover/coverJattends.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+            </article>
+
+        </section>
     </main>
-    <!----------------------- footer ---------------------->
+    <!----------------------- FOOTER ---------------------->
     <div class="containerFooter">
         <div class="contentFooter"></div>
         <footer class="row">
