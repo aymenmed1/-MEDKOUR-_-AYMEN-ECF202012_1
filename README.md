@@ -33,5 +33,5 @@ maquetage de la premiere page web
  /******** **********\
  
 J'ai décidé de ne faire seuelement 2 pages, la page d'accueil et la page mes artistes.
-donc les seul liens fonctionnels sont le lien Mymusic dans la navbar pour aller à la page d'accueil, le lien mes artistes dans la navbar,
-et ainsi que tout les liens de réseaux sociaux et site de musique.
+donc les seuls liens fonctionnels sont le lien Mymusic dans la navbar pour aller à la page d'accueil, le lien mes artistes dans la navbar,
+et ainsi que tous les liens de réseaux sociaux et site de musique.
